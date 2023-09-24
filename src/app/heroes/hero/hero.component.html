@@ -1,0 +1,14 @@
+<dl>
+
+  <dd>{{nombre}}</dd>
+  <dd>{{edad}}</dd>
+  <td>Metodo</td>
+  <dd>{{ getConcatenarInformacion()}}</dd>
+  <td>{{ capitalizerName }}</td>
+  <dd>nombre capitalizado</dd>
+
+</dl>
+
+<button *ngIf="nombre!='Mario'" class="btn btn-primary me-1" (click)="changeName()">Cambiar Nombre</button>
+
+<button *ngIf="edad!=15" class="btn btn-primary" (click)="changeAge()">Cambiar Edad</button>
